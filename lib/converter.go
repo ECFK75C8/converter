@@ -72,4 +72,10 @@ func (cvr Converter) PoundsToKilogram(p Pounds) Kilogram {
 func main() {
 	cvr := Converter{}
 	fmt.Println(cvr.CelsiusToFahrenheit(32))
+	fmt.Println(cvr.FahrenheitToCelsius(120.56))
+	fmt.Println(cvr.SecondToMinute(2))
+	fmt.Println(cvr.SecondToMillisecond(1))
+	fmt.Println(cvr.KilogramToPounds(50))
+	fmt.Println(cvr.DegreeToRadian(30))
+	fmt.Println(cvr.CentimeterToFeet(15))
 }
