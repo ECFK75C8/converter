@@ -17,7 +17,7 @@ type (
 	Fahrenheit  float64
 	Radian      float64
 	Degree      float64
-	Kiogram     float64
+	Kilogram    float64
 	Pounds      float64
 )
 
@@ -61,12 +61,12 @@ func (cvr Converter) RadianToDegree(r Radian) Degree {
 	return Degree(r * (180 / math.Pi))
 }
 
-func (cvr Converter) KilogramToPound(k Kiogram) Pounds {
+func (cvr Converter) KilogramToPounds(k Kilogram) Pounds {
 	return Pounds(k * 2.2)
 }
 
-func (cvr Converter) PoundToKilogram(p Pounds) Kiogram {
-	return Kiogram(p / 2.2)
+func (cvr Converter) PoundsToKilogram(p Pounds) Kilogram {
+	return Kilogram(p / 2.2)
 }
 
 func main() {
